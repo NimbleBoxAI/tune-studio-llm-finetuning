@@ -15,6 +15,56 @@ Prerequisites
 	+ `AUTH`: TuneStudio API key
 	+ `ORGANIZATION`: The organization associated with the TuneStudio account
 
+	 Sure, here's an example section for steps for using the repository:
+
+Getting Started
+---------------
+
+1. **Create a `config.py` file:**
+
+Create a new file named `config.py` in the root directory of the repository. This file should contain the required configuration variables for the scripts to run correctly. Here's an example configuration:
+
+```python
+BASE_STUDIO_URL = "https://studio.tune.app/tune.Studio"
+BENCHMARK_PREFIX = "new-finetuning-search"
+AUTH = {'x-tune-key': 'YOUR_TUNE_STUDIO_API_KEY'}
+ORGANIZATION = "YOUR_TUNE_STUDIO_ORGANIZATION_ID"
+```
+
+Replace `YOUR_TUNE_STUDIO_API_KEY` with your TuneStudio API key and `YOUR_TUNE_STUDIO_ORGANIZATION_ID` with the name of your TuneStudio organization.
+
+2. **Create finetuning jobs:**
+
+Run the `create_job.py` script to create the finetuning jobs. This will search over the specified hyperparameters and create jobs on the TuneStudio platform.
+
+```bash
+python create_job.py
+```
+
+3. **Collect results:**
+
+Once the finetuning jobs have completed, run the `collect_results.py` script to collect the results of the completed jobs.
+
+```bash
+python collect_results.py
+```
+
+This will parse the logs of the completed jobs and extract relevant training metrics.
+
+You can also compare the results of the different hyperparameter combinations using the W&B dashboard.
+
+4. **Clean up finetuning jobs:**
+
+(Optional) To delete the finetuning jobs created by `create_job.py`, run the `cleanup_jobs.py` script.
+
+```bash
+python cleanup_jobs.py
+```
+
+This will filter jobs based on the `BENCHMARK_PREFIX` and allow you to confirm the deletion of the jobs before proceeding.
+
+Note: Make sure to replace the placeholders in the code block for `config.py` with the actual values for your setup. Additionally, ensure that the `AUTH` variable is set correctly with your TuneStudio authentication credentials.
+
 Scripts
 -------
 
