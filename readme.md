@@ -1,4 +1,3 @@
-![TuneLogo](https://framerusercontent.com/images/P3ibw3xcMF3puvmNOGPVnc7wL18.png)
 # Hyperparameter Search Scripts for TuneStudio
 
 
