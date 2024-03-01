@@ -95,7 +95,7 @@ The script then parses the logs of the completed jobs to extract relevant traini
 * Loss
 * Learning rate
 
-For more info, checkout the [API documentation](https://studio.tune.app/tune.Studio/docs/#post-/tune.Studio/ListFinetuneJobs.
+For more info, checkout the [API documentation](https://studio.tune.app/tune.Studio/docs/#post-/tune.Studio/ListFinetuneJobs).
 
 ### `cleanup_jobs.py`
 
