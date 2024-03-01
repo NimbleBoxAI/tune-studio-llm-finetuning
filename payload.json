@@ -1,0 +1,28 @@
+{
+    "auth": {
+        "organization": "e3365ae7-ceeb-425b-b983-1703e8456f76"
+    },
+    "job": {
+        "name": "benchmark-7b-s0-10k-l4",
+        "baseModel": "llama2-07b-base",
+        "datasets": [
+            {
+                "path": "chat-nbx/s0-11k",
+                "type": "huggingface",
+                "format": "chat"
+            }
+        ],
+        "resource": {
+            "gpu": "nvidia-l4",
+            "gpuCount": "1",
+            "maxRetries": 1
+        },
+        "trainingConfig": {
+            "num_epochs": 1,
+            "learning_rate": 0.0002,
+            "hub_model_id": "",
+            "wandb_project": "",
+            "wandb_run_id": ""
+        }
+    }
+}
