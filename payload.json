@@ -3,13 +3,14 @@
         "organization": ""
     },
     "job": {
-        "name": "benchmark-7b-s0-10k-l4",
+        "name": "new-finetune",
         "baseModel": "llama2-07b-base",
+        "chat_template": "chatml",
         "datasets": [
             {
                 "path": "chat-nbx/s0-11k",
                 "type": "huggingface",
-                "format": "chat"
+                "format": "completion"
             }
         ],
         "resource": {
@@ -23,6 +24,11 @@
             "hub_model_id": "",
             "wandb_project": "",
             "wandb_run_id": ""
+        },
+        "meta": {
+            "metadata": {
+                "modality": 1
+            }
         }
     }
 }
