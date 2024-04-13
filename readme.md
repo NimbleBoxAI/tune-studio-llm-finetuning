@@ -1,4 +1,4 @@
-# Hyperparameter Search Scripts for TuneStudio
+# Scripts for scheduling multiple jobs on TuneStudio
 
 
 This repository contains scripts for performing hyperparameter searches on the TuneStudio platform for an LLMOps use case. The scripts require integration with Hugging Face and Weights & Biases (W&B) on the platform.
